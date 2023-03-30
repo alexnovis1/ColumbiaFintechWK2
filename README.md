@@ -1,3 +1,5 @@
+!(va-home-loan-approval-1800.jpeg)
+
 # Loan Qualifier
 
 **This modular style code takes in data froma .csv file, which inputs parameters: Lender, Max Loan Amount, Max LTV, Max DTI, Min Credit Score,Interest Rate. From this data, the code filters out what loans the applicant will qualify based on the applicant's credit score, debt, income, loan amount, and home value.**
@@ -120,7 +122,7 @@ def run():
     save_qualifying_loans(qualifying_loans)
 ```
 
-Lastly, the `app.py` script runs Fire so that user can utilize the convenience of CLI
+Lastly, the `app.py` script runs Fire so that the user can utilize the convenience of CLI
 
 ```python 
 if __name__ == "__main__":
@@ -132,7 +134,10 @@ if __name__ == "__main__":
 ## Contributors
 
 Alex Novis
+
 Columbia Fintech Bootcamp
+
+Picture Credit: https://www.military.com/money/va-loans/home-purchase/va-loan-income-requirements.html
 
 ---
 
