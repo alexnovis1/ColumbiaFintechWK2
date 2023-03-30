@@ -1,10 +1,6 @@
-!(va-home-loan-approval-1800.jpeg)
-
 # Loan Qualifier
 
-**This modular style code takes in data froma .csv file, which inputs parameters: Lender, Max Loan Amount, Max LTV, Max DTI, Min Credit Score,Interest Rate. From this data, the code filters out what loans the applicant will qualify based on the applicant's credit score, debt, income, loan amount, and home value.**
-
-
+**This modular style program, named `loan_qualifier_app` takes in six scripts with the purpose of taking in data froma .csv file with the following variables: Lender, Max Loan Amount, Max Loan-To-Value (LTV), Max Debt-to-Income (DTI), Min Credit Score, and Interest Rate. From this data, the code filters out what loans the applicant will qualify based on the applicant's credit score, debt, income, loan amount, and home value.**
 
 ---
 
@@ -23,22 +19,26 @@ This code utilizes python. Specifcally version 3.7, which will allow the person 
 
 ## Installation Guide
 
-The script begins with the following inputs to install Fire and Questionary.
+The `app.py` script begins with the following inputs to install Fire and Questionary.
 
 ```python
 pip install fire
 pip install questionary
 ```
 
-Next, the `load_csv` function which loads and reads a provided bank data .csv file with inputs Lender, Max Loan Amount, Max LTV, Max DTI, Min Credit Score, and Interest Rate. An example .csv file, "daily_rate_sheet.csv" has been included in the repository. Next, the `save_cvs` function will write and save the output data (i.e., a list of the banks that are willing to underwrite the loan).
+Next, the `load_csv` function which loads and reads a provided bank data .csv file with the inputs Lender, Max Loan Amount, Max LTV, Max DTI, Min Credit Score, and Interest Rate. An example .csv file, "daily_rate_sheet.csv" has been included in the repository. Following, the `save_cvs` function will write and save the output data (i.e., a list of the banks that are willing to underwrite the loan).
 
-Both the `load_csv` and `save_cvs` files can be found in the `fileio.py` (a full explanation on this .py file can be found below under the Usage section). We import `load_cvs` and `save_cvs` by pulling it from the `fileio.py` by: 
+We import `load_cvs` and `save_cvs` by pulling it from the `fileio.py` by: 
+
+> Side Note: Both the `load_csv` and `save_cvs` files can be found in the `fileio.py`.
 
 ```python
 from qualifier.utilis.fileio import load_cvs, save_cvs
 ```
 
 Following importing the input/output (load and save) .cvs files, the `app.py` script imports the filter functions: max loan size, credit score, debt to income, and loan to value. These functions are in their own modular style scripts under qualifier and then filter branches, respectively. More detail on these scripts can be found below under te Usage section in the qualifier folder.
+
+> Side Note: All the filter scripts, that is, `filter_max_loan_size`, `filter_credit_score`, `filter_debt_to_income`, `ilter_loan_to_value` can be found in the `qualifier` -> `filters` folder.
 
 ```python
 from qualifier.filters.max_loan_size import filter_max_loan_size
@@ -47,13 +47,11 @@ from qualifier.filters.debt_to_income import filter_debt_to_income
 from qualifier.filters.loan_to_value import filter_loan_to_value
 ```
 
-
-
 ---
 
 ## Usage
 
-Utilizing the CLI that Questionary provides, the function `load_bank_data()` will prompt the user to put in a .csv file in the terminal which will allow `load_bank_data()` to load the file into the script. 
+Utilizing the CLI that Questionary and Fire provides, the function `load_bank_data()` will prompt the user to put in a .csv file in the terminal which will allow `load_bank_data()` to load the file into the script. 
 
 The `find_qualifying_loans()` function will input the list of bank data from the .csv file and return the list of banks that the banks are willing to underwrite the loan.
 
@@ -136,8 +134,6 @@ if __name__ == "__main__":
 Alex Novis
 
 Columbia Fintech Bootcamp
-
-Picture Credit: https://www.military.com/money/va-loans/home-purchase/va-loan-income-requirements.html
 
 ---
 
