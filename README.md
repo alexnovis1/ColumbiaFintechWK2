@@ -1,6 +1,6 @@
 # Loan Qualifier
 
-This modular style code takes in data froma .csv file, which inputs parameters: Lender, Max Loan Amount, Max LTV, Max DTI, Min Credit Score,Interest Rate. From this data, the code filters out what loans the applicant will qualify based on the applicant's credit score, debt, income, loan amount, and home value.**
+**This modular style code takes in data froma .csv file, which inputs parameters: Lender, Max Loan Amount, Max LTV, Max DTI, Min Credit Score,Interest Rate. From this data, the code filters out what loans the applicant will qualify based on the applicant's credit score, debt, income, loan amount, and home value.**
 
 
 
