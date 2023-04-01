@@ -1,4 +1,4 @@
-![Home Loan Approval](va-home-loan-approval-1800.jpeg)
+![Home Loan Approval](va-home-loan-approval-1800.png)
 # Loan Qualifier
 
 **This modular style program, named `loan_qualifier_app` takes in six scripts with the purpose of taking in data froma .csv file with the following variables: Lender, Max Loan Amount, Max Loan-To-Value (LTV), Max Debt-to-Income (DTI), Min Credit Score, and Interest Rate. From this data, the code filters out what loans the applicant will qualify based on the applicant's credit score, debt, income, loan amount, and home value.**
