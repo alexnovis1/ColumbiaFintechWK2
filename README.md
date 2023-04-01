@@ -1,4 +1,5 @@
-![Home Loan Approval](./va-home-loan-approval-1800.png)
+![Home Loan Approval]('va-home-loan-approval-1800.png')
+
 # Loan Qualifier
 
 **This modular style program, named `loan_qualifier_app` takes in six scripts with the purpose of taking in data froma .csv file with the following variables: Lender, Max Loan Amount, Max Loan-To-Value (LTV), Max Debt-to-Income (DTI), Min Credit Score, and Interest Rate. From this data, the code filters out what loans the applicant will qualify based on the applicant's credit score, debt, income, loan amount, and home value.**
@@ -7,7 +8,7 @@
 
 ## Technologies
 
-This code utilizes python. Specifcally version 3.7, which will allow the person using this code to run python's Fire and Questionary libraries.
+This code utilizes python version 3.7, which will allow the person using this code to run python's Fire and Questionary libraries.
 
 *Fire & Questionary are used to help provide user's input the applicant variables in a command line interface, rather than searching through the code to hard code the data into the python script. This is a huge time saver!*
 
