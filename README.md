@@ -1,5 +1,3 @@
-![Home Loan Approval](Starter_Code/loan_qualifier_app/data/va-home-loan-approval-1800.png)
-
 # Loan Qualifier
 
 **This modular style program, `loan_qualifier_app`, takes in six scripts with the purpose of inputing raw data from a .csv file with the following variables: Lender, Max Loan Amount, Max Loan-To-Value (LTV), Max Debt-to-Income (DTI), Min Credit Score, and Interest Rate. From this data, the code will filter out what loans the applicant will qualify based on the applicant's credit score, debt, income, loan amount, and home value.**
@@ -10,7 +8,7 @@
 
 This code utilizes python version 3.7, which will allow the person using this code to run python's Fire and Questionary libraries.
 
-*Fire & Questionary are used to help provide user's input the applicant variables in a command line interface, rather than searching through the code to hard code the data into the python script. This is a huge time saver!*
+*Fire & Questionary are used to help provide user's input the applicant variables in a command line interface, rather than searching through the code and then hard coding the applicant's data into the python script. This is a huge time saver!*
 
 
 [To learn more about Fire](https://google.github.io/python-fire/guide/)
@@ -28,7 +26,9 @@ pip install fire
 pip install questionary
 ```
 
-Next, the `load_csv` function which loads and reads a provided bank data .csv file with the inputs Lender, Max Loan Amount, Max LTV, Max DTI, Min Credit Score, and Interest Rate. An example .csv file, "daily_rate_sheet.csv" has been included in the repository. Following, the `save_cvs` function will write and save the output data (i.e., a list of the banks that are willing to underwrite the loan).
+Next, the `load_csv` function which loads and reads a provided bank data .csv file with the inputs Lender, Max Loan Amount, Max LTV, Max DTI, Min Credit Score, and Interest Rate. Following, the `save_cvs` function will write and save the output data (i.e., a list of the banks that are willing to underwrite the loan).
+
+> Side Note: An example .csv file, "daily_rate_sheet.csv" has been included in the repository.
 
 We import `load_cvs` and `save_cvs` by pulling it from the `fileio.py` by: 
 
@@ -38,9 +38,7 @@ We import `load_cvs` and `save_cvs` by pulling it from the `fileio.py` by:
 from qualifier.utilis.fileio import load_cvs, save_cvs
 ```
 
-Following importing the input/output (load and save) .cvs files, the `app.py` script imports the filter functions: max loan size, credit score, debt to income, and loan to value. These functions are in their own modular style scripts under qualifier and then filter branches, respectively. More detail on these scripts can be found below under te Usage section in the qualifier folder.
-
-> Side Note: All the filter scripts, that is, `filter_max_loan_size`, `filter_credit_score`, `filter_debt_to_income`, `ilter_loan_to_value` can be found in the `qualifier` -> `filters` folder.
+Following, the `app.py` script imports the filter functions: max loan size, credit score, debt to income, and loan to value. These functions are in their own modular style scripts under qualifier and then filter branches, respectively. 
 
 ```python
 from qualifier.filters.max_loan_size import filter_max_loan_size
