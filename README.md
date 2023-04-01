@@ -1,3 +1,4 @@
+![Home Loan Approval](va-home-loan-approval-1800.jpeg)
 # Loan Qualifier
 
 **This modular style program, named `loan_qualifier_app` takes in six scripts with the purpose of taking in data froma .csv file with the following variables: Lender, Max Loan Amount, Max Loan-To-Value (LTV), Max Debt-to-Income (DTI), Min Credit Score, and Interest Rate. From this data, the code filters out what loans the applicant will qualify based on the applicant's credit score, debt, income, loan amount, and home value.**
@@ -127,6 +128,30 @@ if __name__ == "__main__":
     fire.Fire(run)
 ```
 
+---
+
+## Structure 
+
+```
+├── Starter_Code
+│   ├── loan_qualifier_app
+│       ├── README.md
+│       ├── app.py
+│       ├── data
+│            ├── daily_rate_sheet.csv
+│       ├── qualifier
+│            ├── filters
+│                ├── _pychace_
+│                ├── credit_score.py
+│                ├── debt_to_income.py
+│                ├── loan_to_value.py
+│                ├── max_loan_size.py
+│            ├── utils
+│                ├── _pychace_
+│                ├── calculators.py
+│                ├── fileio.py    
+└──     ├── qualifying_loans.csv
+```
 ---
 
 ## Contributors
