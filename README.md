@@ -1,4 +1,4 @@
-![Home Loan Approval](/Starter_Code/loan_qualifier_app/data/va-home-loan-approval-1800.png)
+![Home Loan Approval](Starter_Code/loan_qualifier_app/data/va-home-loan-approval-1800.png)
 
 # Loan Qualifier
 
